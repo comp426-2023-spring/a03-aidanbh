@@ -1,0 +1,19 @@
+{
+  "name": "node-rpsls",
+  "version": "0.0.1",
+  "description": "Rock, paper, scissors, (lizard, Spock) in CLI.",
+  "main": "./lib/rpsls.js",
+  "scripts": {
+    "test": "node rpsls-cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a03-aidanbh.git"
+  },
+  "author": "@aidanbh",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a03-aidanbh/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a03-aidanbh#readme"
+}
