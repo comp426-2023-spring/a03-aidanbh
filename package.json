@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Rock, paper, scissors, (lizard, Spock) in CLI.",
   "main": "./lib/rpsls.js",
+  "type": "module",
   "scripts": {
     "test": "node ./bin/rpsls-cli.js"
   },
