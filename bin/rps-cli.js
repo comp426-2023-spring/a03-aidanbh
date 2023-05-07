@@ -31,7 +31,7 @@ if (args.r || args.rules) {
   process.exit(0)
 }
 
-if (argv._[0]) { // array of unnnamed args
+if (args._[0]) { // array of unnnamed args
   try {
     console.log(JSON.stringify(rps(argv._[0])))
   } catch (error) {
