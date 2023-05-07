@@ -4,7 +4,11 @@
   "description": "Rock, paper, scissors, (lizard, Spock) in CLI.",
   "main": "./lib/rpsls.js",
   "scripts": {
-    "test": "node rpsls-cli.js"
+    "test": "node ./bin/rpsls-cli.js"
+  },
+  "bin": {
+    "node-rps": "./bin/rps-cli.js",
+    "node-rpsls": "./bin/rpsls-cli.js"
   },
   "repository": {
     "type": "git",
