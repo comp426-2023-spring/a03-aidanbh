@@ -36,8 +36,9 @@ if (args._[0]) { // array of unnnamed args
     console.log(JSON.stringify(rps(argv._[0])))
   } catch (error) {
     // TODO should not repeat these long strings
-    console.log(`Supplied argument ${argv._[0]} is invalid.
-    Usage: node-rps [SHOT]
+    console.error(`Supplied argument ${args._[0]} is out of range.`)
+    console.log(	
+    `Usage: node-rps [SHOT]
     Play Rock Paper Scissors (RPS)
       -h, --help      display this help message and exit
       -r, --rules     display the rules and exit
