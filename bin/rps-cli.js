@@ -33,7 +33,7 @@ if (args.r || args.rules) {
 
 if (args._[0]) { // array of unnnamed args
   try {
-    console.log(JSON.stringify(rps(argv._[0])))
+    console.log(JSON.stringify(rps(args._[0])))
   } catch (error) {
     // TODO should not repeat these long strings
     console.error(`Supplied argument ${args._[0]} is out of range.`)
