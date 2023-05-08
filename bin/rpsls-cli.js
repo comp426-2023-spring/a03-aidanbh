@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import { rps } from '../lib/rpsls.js'
+import { rpsls } from '../lib/rpsls.js'
 import minimist from 'minimist'
 
 const args = minimist(process.argv.slice(2))
@@ -42,7 +42,7 @@ if (args.r || args.rules) {
 
 if (args._[0]) { // array of unnnamed args
   try {
-    console.log(JSON.stringify(rps(args._[0])))
+    console.log(JSON.stringify(rpsls(args._[0])))
   } catch (error) {
     // TODO should not repeat these long strings
     console.error(`Supplied argument ${args._[0]} is out of range.`)
@@ -74,5 +74,5 @@ if (args._[0]) { // array of unnnamed args
     process.exit(1)
   }
 } else {
-  console.log(JSON.stringify(rps()))
+  console.log(JSON.stringify(rpsls()))
 }
